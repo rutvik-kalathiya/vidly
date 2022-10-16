@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { getMovies } from "../services/fakeMovieService";
 
 function Movies() {
@@ -8,7 +8,8 @@ function Movies() {
   };
   if (movies.length === 0) return <p>There are no movies in the Database</p>;
   return (
-    <div>
+    <React.Fragment>
+      <p> Showing {movies.length} movies in the database.</p>
       <table className="table">
         <thead>
           <tr>
@@ -38,7 +39,7 @@ function Movies() {
           ))}
         </tbody>
       </table>
-    </div>
+    </React.Fragment>
   );
 }
 
