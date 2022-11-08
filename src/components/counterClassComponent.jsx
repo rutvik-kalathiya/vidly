@@ -13,7 +13,7 @@ class CounterClassComponent extends Component {
     rederTags() {
          if(this.state.tags.length === 0) return <p>There are no Taggs!</p>
 
-         return <ul>{ this.state.tags.map(tag => <li key={tag}> {tag}</li>) }</ul>
+         return <div className='tags'>{ this.state.tags.map(tag => <li key={tag}> {tag}</li>) }</div>
     }
 
     render() {
