@@ -8,6 +8,18 @@ li{
     background-color: aliceblue;
     margin: 3px;
 }
+h2{
+    display: flex;
+    justify-content: center;
+
+}
+.component-header{
+    display: flex;
+    flex-direction: column;
+}
+.component-btn{
+    flex-direction: row;
+}
 /* .red{
     color: red;
 }

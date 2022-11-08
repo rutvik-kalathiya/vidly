@@ -32,13 +32,18 @@ function CounterFunctionalComponent() {
   
   return (
     <React.Fragment>
-        <span className={`badge m-2 badge-${getBadgeClasses()}`}>{getCount()}</span>
-        <button onClick={() => handleIncrement()} className='btn btn-secondary btn-sm'>Increment</button>
+      <div className='component-header'>
+        <h2>Functional Component</h2>
+        <div className='component-btn'>
+          <span className={`badge m-2 badge-${getBadgeClasses()}`}>{getCount()}</span>
+          <button onClick={() => handleIncrement()} className='btn btn-secondary btn-sm'>Increment</button>
+        </div>
         {state.tags.length === 0 ? <p>There are no tags!</p> :
         <ul>
           {state.tags.map( tag => <li key={tag}> {tag} </li>)}
         </ul>}
         <br />
+      </div>
     </React.Fragment>
   )
 }
