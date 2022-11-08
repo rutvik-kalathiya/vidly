@@ -19,11 +19,16 @@ class CounterClassComponent extends Component {
     render() {
         return (
             <React.Fragment>
-                <span className={`badge m-2 badge-${this.getBadgeClasses()}`}>{ this.fortmatCount()}</span>
-                <button onClick={this.handleIncrement} className='btn btn-secondary btn-sm'>Increment</button>
-                {this.state.tags.length === 0 && 'Please Create a Tags!'}
-                {this.rederTags()}
-                <br />
+                <div className='component-header'>
+                    <h2>Class Component</h2>
+                    <div className='component-btn'>
+                        <span className={`badge m-2 badge-${this.getBadgeClasses()}`}>{ this.fortmatCount()}</span>
+                        <button onClick={this.handleIncrement} className='btn btn-secondary btn-sm'>Increment</button>
+                    </div>
+                    {this.state.tags.length === 0 && 'Please Create a Tags!'}
+                    {this.rederTags()}
+                    <br />
+                </div>
             </React.Fragment>
         );
     }
