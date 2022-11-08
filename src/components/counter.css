@@ -2,12 +2,15 @@ ul{
     list-style-type: none;
 }
 li{
-    display: block;
+    display: flex;
+    width: 7rem;
     float:left;
     padding: 5px;
     background-color: aliceblue;
     margin: 3px;
+    justify-content: space-around;
 }
+
 h2{
     display: flex;
     justify-content: center;
@@ -20,9 +23,6 @@ h2{
 .component-btn{
     flex-direction: row;
 }
-/* .red{
-    color: red;
+.tags{
+    margin-top: 10px;
 }
-.blue{
-    color: blue;
-} */

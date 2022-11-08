@@ -13,14 +13,14 @@ class CounterClassComponent extends Component {
     rederTags() {
          if(this.state.tags.length === 0) return <p>There are no Taggs!</p>
 
-         return <ul>{ this.state.tags.map(tag => <li key={tag}> {tag}</li>) }</ul>
+         return <div className='tags'>{ this.state.tags.map(tag => <li key={tag}> {tag}</li>) }</div>
     }
 
     render() {
         return (
             <React.Fragment>
                 <div className='component-header'>
-                    <h2>Class Component</h2>
+                    <h2>Counter using class component</h2>
                     <div className='component-btn'>
                         <span className={`badge m-2 badge-${this.getBadgeClasses()}`}>{ this.fortmatCount()}</span>
                         <button onClick={this.handleIncrement} className='btn btn-secondary btn-sm'>Increment</button>
