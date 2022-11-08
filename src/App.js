@@ -1,11 +1,13 @@
 import './App.css';
-import Counters from './components/counters';
-import Movies from './components/movies';
+import CounterClassComponent from './components/counterClassComponent';
+import CounterFunctionalComponent from './components/counterFunctionalComponent';
 
 function App() {
   return (
       <main className="container">
-        <Movies />
+        <CounterClassComponent />
+        <hr />
+        <CounterFunctionalComponent />
       </main>
   );
 }
