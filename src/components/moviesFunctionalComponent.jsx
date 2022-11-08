@@ -6,9 +6,10 @@ function Movies() {
   const handleDelete = (movie) => {
     setMovies(movies.filter((m) => m._id !== movie._id));
   };
-  if (movies.length === 0) return <p>There are no movies in the Database</p>;
+  if (movies.length === 0) return <React.Fragment><h2>Movies using functional Components</h2><p>There are no movies in database</p></React.Fragment>
   return (
     <React.Fragment>
+      <h2>Movies using functional Components</h2>
       <p> Showing {movies.length} movies in the database.</p>
       <table className="table">
         <thead>

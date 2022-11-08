@@ -20,7 +20,7 @@ class CounterClassComponent extends Component {
         return (
             <React.Fragment>
                 <div className='component-header'>
-                    <h2>Class Component</h2>
+                    <h2>Counter using class component</h2>
                     <div className='component-btn'>
                         <span className={`badge m-2 badge-${this.getBadgeClasses()}`}>{ this.fortmatCount()}</span>
                         <button onClick={this.handleIncrement} className='btn btn-secondary btn-sm'>Increment</button>

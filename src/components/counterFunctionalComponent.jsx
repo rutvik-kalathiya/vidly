@@ -25,7 +25,7 @@ function CounterFunctionalComponent() {
   return (
     <React.Fragment>
       <div className='component-header'>
-        <h2>Functional Component</h2>
+        <h2>Counter using functional component</h2>
         <div className='component-btn'>
           <span className={`badge m-2 badge-${getBadgeClasses()}`}>{getCount()}</span>
           <button onClick={() => handleIncrement()} className='btn btn-secondary btn-sm'>Increment</button>
