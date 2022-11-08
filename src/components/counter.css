@@ -1,0 +1,16 @@
+ul{
+    list-style-type: none;
+}
+li{
+    display: block;
+    float:left;
+    padding: 5px;
+    background-color: aliceblue;
+    margin: 3px;
+}
+/* .red{
+    color: red;
+}
+.blue{
+    color: blue;
+} */
