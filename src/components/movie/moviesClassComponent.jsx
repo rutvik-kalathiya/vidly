@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getMovies } from '../services/fakeMovieService';
+import { getMovies } from '../../services/fakeMovieService';
 
 class moviesClassComponent extends Component {
   state = {
