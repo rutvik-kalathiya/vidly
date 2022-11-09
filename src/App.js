@@ -1,12 +1,13 @@
 import './App.css';
-import Counter from './components/counter/counter';
+import CountersClass from './components/counter/countersClass';
+import CountersFunctional from './components/counter/counterFunctionalComponent';
 import Movie from './components/movie/movie';
 
 function App() {
   return (
       <main className="container">
-        <Counter />
-        <Movie />
+        <CountersClass/>
+        <Movie/>
       </main>
   );
 }
