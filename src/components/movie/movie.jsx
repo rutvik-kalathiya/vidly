@@ -1,6 +1,5 @@
 import React from 'react';
 import MoviesClassComponent from './moviesClassComponent';
-import MoviesFunctionalComponent from './moviesFunctionalComponent';
 
 import './movie.css';
 
