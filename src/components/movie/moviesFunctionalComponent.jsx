@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { getMovies } from "../services/fakeMovieService";
+import { getMovies } from "../../services/fakeMovieService";
 
 function Movies() {
   const [movies, setMovies] = useState(getMovies);
