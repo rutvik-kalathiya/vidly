@@ -1,16 +1,13 @@
 import React from 'react'
-import CounterClassComponent from './counterClassComponent'
 import CounterFunctionalComponent from './counterFunctionalComponent'
 
-function Counter() {
+function CounterFunctional() {
   return (
-    <div>
-      <CounterClassComponent />
-      <hr />
+    <div className='main'>
       <CounterFunctionalComponent />
       <hr />
     </div>
   )
 }
 
-export default Counter
+export default CounterFunctional
