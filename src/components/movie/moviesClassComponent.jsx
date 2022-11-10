@@ -14,8 +14,8 @@ class moviesClassComponent extends Component {
     if (this.state.movies.length === 0) return <React.Fragment><h2>Movies using class Components</h2><p>There are no movies in database</p></React.Fragment>
 
     return (
-      <React.Fragment>
-      <h2>Movies using class Components</h2>
+      <div className='movie-component'>
+      <h4>Movies using class Components</h4>
       <p> Showing {this.state.movies.length} movies in the database.</p>
       <table className="table">
         <thead>
@@ -48,7 +48,7 @@ class moviesClassComponent extends Component {
           ))}
         </tbody>
       </table>
-    </React.Fragment>
+    </div>
     )
   }
 }

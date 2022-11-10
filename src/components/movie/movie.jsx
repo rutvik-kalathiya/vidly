@@ -5,9 +5,8 @@ import './movie.css';
 
 function Movie() {
   return (
-    <div>
+    <div className='movie'>
         <MoviesClassComponent />
-        <hr />
     </div>
   )
 }

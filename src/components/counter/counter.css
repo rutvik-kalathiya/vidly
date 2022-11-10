@@ -11,7 +11,7 @@ li{
     justify-content: space-around;
 }
 
-h2{
+h4{
     display: flex;
     justify-content: center;
 
@@ -27,13 +27,7 @@ h2{
     margin-top: 10px;
 }
 
-.main {
-}
-
-.class-component{
-
-}
-
-.functional-component{
-    padding-left: 5rem;
+.component{
+    background-color: aliceblue;
+    padding: 1rem;
 }

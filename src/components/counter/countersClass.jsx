@@ -34,14 +34,12 @@ class CountersClass extends Component {
      
     render() { 
         return (
-            <div className='main'>
-                <div className='class-component'>
+            <div className='component'>
                 <h4>Counter using class component</h4>
                 <button className="btn btn-primary btn-sm m-2" onClick={ this.handleReset  }>Reset</button>
                 {this.state.counters.map(counter => 
                     <CounterClassComponent key={counter.id} counter={counter} onDelete={this.handleDelete} onIncrement={this.handleIncrement} />
                 )}
-                </div>
             </div>
         );
     }
