@@ -6,9 +6,9 @@ function CounterFunctional() {
 
   const [state, setState ] = useState( { counters: [
     {id: 1, value: 0 },
-    {id: 2, value: 1 },
-    {id: 3, value: 2 },
-    {id: 4, value: 3 },
+    {id: 2, value: 0 },
+    {id: 3, value: 0 },
+    {id: 4, value: 0 },
   ] }
   );
 
