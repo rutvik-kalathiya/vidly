@@ -34,16 +34,40 @@ function CounterFunctional() {
     setState( {counters})
   }
 
+  const handleIncrementCounter = () => {
+    console.log('Handle Drement Called');
+    setState({ counters: [...state.counters, {id:5 , value: 0}] })
+  }
+
+  const handleDecrementCounter = () => {
+    state.counters.pop();
+    setState({ counters: [...state.counters ]});
+  }
+
   return (
-    <div className='main'>
       <div className='component'>
         <h4>Counter using functional component</h4>
-        <button className="btn btn-primary btn-sm m-2" onClick={handleReset}>Reset</button>
+        <div className='center-col'>
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item page-link" onClick={handleDecrementCounter}> - </li>
+              <li class="page-item active">
+                <span class="page-link">
+                  {state.counters.length}
+                  <span class="sr-only">(current)</span>
+                </span>
+              </li>
+              <li class="page-item page-link" onClick={handleIncrementCounter}> + </li>
+              <li class="page-item">
+              </li>
+            </ul>
+          </nav>
+          <button className="btn btn-primary btn-sm m-2" onClick={handleReset}>Reset</button>
+        </div>
         {state.counters.map( counter => 
           <CounterFunctionalComponent key={counter.id} counter={counter} onIncrement={handleIncrement} onDelete={handleDelete} /> 
         )}
       </div>
-    </div>
   )
 }
 

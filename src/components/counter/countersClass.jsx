@@ -34,7 +34,7 @@ class CountersClass extends Component {
      
     render() { 
         return (
-            <div className='component'>
+            <div className='component center-col'>
                 <h4>Counter using class component</h4>
                 <button className="btn btn-primary btn-sm m-2" onClick={ this.handleReset  }>Reset</button>
                 {this.state.counters.map(counter => 

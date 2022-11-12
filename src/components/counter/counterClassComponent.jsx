@@ -5,7 +5,7 @@ class CounterClassComponent extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className='component-header'>
+                <div className='center'>
                     {this.props.children}
                     <div className='component-btn'>
                         <span className={`badge m-2 badge-${this.getBadgeClasses()}`}>{ this.fortmatCount()}</span>

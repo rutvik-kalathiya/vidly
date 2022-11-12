@@ -1,33 +1,20 @@
-ul{
-    list-style-type: none;
-}
-li{
-    display: flex;
-    width: 7rem;
-    float:left;
-    padding: 5px;
-    background-color: aliceblue;
-    margin: 3px;
-    justify-content: space-around;
-}
-
-h4{
-    display: flex;
-    justify-content: center;
-
-}
-.component-header{
+.center-col{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.center-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .component-btn{
     flex-direction: row;
 }
-.tags{
-    margin-top: 10px;
-}
-
 .component{
     background-color: aliceblue;
     padding: 1rem;
+}
+nav{
+    margin-top: 1rem;
 }

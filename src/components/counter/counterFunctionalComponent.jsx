@@ -16,7 +16,7 @@ function CounterFunctionalComponent(props) {
   }
   return (
     <React.Fragment>
-      <div className='component-header'>
+      <div className='center-col component-header'>
         <div className='component-btn'>
           <span className={`badge m-2 badge-${getBadgeClasses()}`}>{getCount()}</span>
           <button className='btn btn-secondary btn-sm' onClick={() => props.onIncrement(props.counter)}>Increment</button>

@@ -8,8 +8,8 @@ function App() {
   return (
       <React.Fragment>
         <div className="counter">
-        <CountersClass/>
         <CounterFunctional />
+        <CountersClass/>
       </div>
         <div className='movie'>
           <Movie/>
