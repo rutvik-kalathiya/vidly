@@ -1,5 +1,4 @@
-Demo:
-### https://rutvik-vidly.netlify.app
+### 👀 https://rutvik-vidly.netlify.app
 
 ## Available Scripts
 
